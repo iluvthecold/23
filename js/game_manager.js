@@ -4,7 +4,7 @@ function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.scoreManager = new ScoreManager;
   this.actuator     = new Actuator;
 
-  this.startTiles   = 4;
+  this.startTiles   = 2;
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
@@ -127,7 +127,7 @@ GameManager.prototype.move = function (direction) {
 
         // Only one merger per row traversal?
         if (next && next.value === tile.value && !next.mergedFrom) {
-          var multiply = Math.random() < 0.986 ? 2 : 4;
+          var multiply = Math.random() < 0.986 ? 2 : 2;
           var merged = new Tile(positions.next, tile.value * multiply);
           merged.mergedFrom = [tile, next];
 
@@ -140,8 +140,8 @@ GameManager.prototype.move = function (direction) {
           // Update the score
           self.score += merged.value;
 
-          // The mighty 16384 tile
-          if (merged.value === 16384) self.won = true;
+          // The mighty 2048 tile
+          if (merged.value === 2048) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
