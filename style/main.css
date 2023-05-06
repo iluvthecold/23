@@ -556,6 +556,25 @@ hr {
   .tile.tile-▲ .tile-inner {
     color: #031000;
     background: #61ff3d; }
+  .tile.tile-𝟵 .tile-inner {
+    color: #f9f6f3;
+    background: #d3217a; }
+  .tile.tile-⒐ .tile-inner {
+    color: #f9f6f2;
+    background: #c9156f; }
+  .tile.tile-⑨ .tile-inner {
+    color: #000000;
+    background: #d3217a; }
+  .tile.tile-NINE .tile-inner {
+    color: #f9f6f1;
+    background: #d3217a; 
+    font-size: 23px; }
+  .tile.tile-5- .tile-inner {
+    color: #010c8a;
+    background: #00c6e1; }
+  .tile.tile-© .tile-inner {
+    color: #dbdada;
+    background: #e96e08; }
   .tile.tile-99 .tile-inner {
     color: #e83004;
     background: #b8ffa8; 
@@ -577,6 +596,9 @@ hr {
     background: #d3217a; }
   .tile.tile-F .tile-inner {
     color: #e90000;
+    background: #ffffff; }
+  .tile.tile-FF .tile-inner {
+    color: #8e0000;
     background: #ffffff; }
   .tile.tile-҉ .tile-inner {
     color: #08ff00;
