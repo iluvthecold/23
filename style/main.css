@@ -508,12 +508,12 @@ hr {
     font-weight: bold;
     z-index: 10;
     font-size: 30px; }
-  .tile.tile-200 .tile-inner {
-    background: #eee4da;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
-  .tile.tile-400 .tile-inner {
-    background: #ede0c8;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
+  .tile.tile-0 .tile-inner {
+    color: #f9f6f2;
+    background: #cdc1b4; }
+  .tile.tile-00 .tile-inner {
+    color: #f9f6f2;
+    background: #bbada0; }
   .tile.tile-1 .tile-inner {
     color: #f9f6f2;
     background: #27af1c; }
@@ -545,67 +545,41 @@ hr {
   .tile.tile-10 .tile-inner {
     color: #000000;
     background: #000000; }
+  .tile.tile-50 .tile-inner {
+    color: #ffde85;
+    background: #c39312; 
+    font-weight: bold; 
+    font-size: 28px; }
+  .tile.tile-60 .tile-inner {
+    color: #ff8585;
+    background: #c31212; 
+    font-weight: bold; 
+    font-size: 28px; }
   .tile.tile-82 .tile-inner {
     color: #ecbca7;
     background: #cd9b84; }
-  .tile.tile-│ .tile-inner {
-    color: #f9f6f2;
-    background: #9c5d7c;
-    font-size: 31px; 
-    font-family: fantasy; }
+  .tile.tile-83 .tile-inner {
+    color: #f8f244;
+    background: #176843; }
   .tile.tile-Ꜭ .tile-inner {
     color: #f9f6f2;
     background: #04017e; }
   .tile.tile-▲ .tile-inner {
     color: #031000;
     background: #61ff3d; }
+  .tile.tile-▼ .tile-inner {
+    color: #031000;
+    background: #255f18; }
   .tile.tile-𝟵 .tile-inner {
     color: #f9f6f3;
     background: #d3217a; }
-  .tile.tile-⁹ .tile-inner {
-    color: #f9f6f1;
-    background: #d3217a; }
-  .tile.tile-⒐ .tile-inner {
-    color: #f9f6f2;
-    background: #c9156f; }
-  .tile.tile-⑨ .tile-inner {
-    color: #000000;
+  .tile.tile-９ .tile-inner {
+    color: #f9f6f3;
     background: #d3217a; }
   .tile.tile-NINE .tile-inner {
     color: #f9f6f1;
     background: #d3217a; 
     font-size: 23px; }
-  .tile.tile-5- .tile-inner {
-    color: #010c8a;
-    background: #00c6e1; }
-  .tile.tile-© .tile-inner {
-    color: #dbdada;
-    background: #e96e08; }
-  .tile.tile-℗ .tile-inner {
-    color: #dbdada;
-    background: #fb9d4e; }
-  .tile.tile-◊ .tile-inner {
-    color: #fff300;
-    background: #00ff9b; }
-  .tile.tile-99 .tile-inner {
-    color: #e83004;
-    background: #b8ffa8; 
-    font-size: 22px; }
-  .tile.tile--5 .tile-inner {
-    color: #011c20;
-    background: #00c6e1; }
-  .tile.tile-0 .tile-inner {
-    color: #f3fe13;
-    background: #5f0297; }
-  .tile.tile-▼ .tile-inner {
-    color: #031000;
-    background: #255f18; }
-  .tile.tile-Ʒ .tile-inner {
-    color: #f9f6f2;
-    background: #a76028; }
-  .tile.tile-⁹ .tile-inner {
-    color: #ffa3f8;
-    background: #d3217a; }
   .tile.tile-F .tile-inner {
     color: #e90000;
     background: #ffffff; }
@@ -619,52 +593,9 @@ hr {
     color: #f9f6f2;
     background: #7f894a;
     font-size: 26px; }
-  .tile.tile-50 .tile-inner {
-    color: #ffde85;
-    background: #c39312; 
-    font-weight: bold; 
-    font-size: 28px; }
-  .tile.tile-60 .tile-inner {
-    color: #ff8585;
-    background: #c31212; 
-    font-weight: bold; 
-    font-size: 28px; }
-  .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #6e96ac;
-    font-size: 27px; }
-  .tile.tile-129 .tile-inner {
-    color: #f9f6f2;
-    background: #ac6ea2;
-    font-size: 27px; }
-  .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background: #edc53f;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
-    font-size: 18px; }
-  .tile.tile-2048 .tile-inner {
-    color: #f9f6f2;
-    background: #edc22e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
-    font-size: 18px; }
-  .tile.tile-4096 .tile-inner {
-    color: #f9f6f2;
-    background: #77a136;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
-    font-size: 18px; }
-  .tile.tile-8192 .tile-inner {
-    color: #f9f6f2;
-    background: #2db388;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
-    font-size: 18px; }
-  .tile.tile-16384 .tile-inner {
-    color: #f9f6f2;
-    background: #2d83b3;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
-    font-size: 16px; }
   .tile.tile-super .tile-inner {
     color: #f9f6f2;
-    background: #3c3a32;
+    background: #f9f6f2;
     font-size: 16px; }
 
 @-webkit-keyframes appear {
