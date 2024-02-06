@@ -575,7 +575,8 @@ hr {
     background: #176843; }
   .tile.tile-Ʒ .tile-inner {
     color: #f9f6f2;
-    background: #a76028; }
+    background: #a76028; 
+    font-size: 26px; }
   .tile.tile-Ꜭ .tile-inner {
     color: #f9f6f2;
     background: #04017e; }
@@ -598,16 +599,10 @@ hr {
     color: #f9f6f1;
     background: #d3217a; 
     font-size: 23px; }
-  .tile.tile-𝟡 .tile-inner {
-    color: #f9f6f1;
-    background: #d3217a; }
   .tile.tile-⁹ .tile-inner {
     color: #f9f6f1;
     background: #d3217a; }
   .tile.tile-₉ .tile-inner {
-    color: #f9f6f1;
-    background: #d3217a; }
-  .tile.tile-⒐ .tile-inner {
     color: #f9f6f1;
     background: #d3217a; }
   .tile.tile-Ⅸ .tile-inner {
