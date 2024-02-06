@@ -130,7 +130,7 @@ GameManager.prototype.move = function (direction) {
           
 	        var merged = new Tile(positions.next, tile.value * 1);
           if(next && next.value == 10) merged.value = tile.value * 1;
-          if(next && tile.value == 10) merged.value = next.value * 1;
+          if(next && tile.value == 10) merged.value = next.value * 10;
           merged.mergedFrom = [tile, next];
 
           self.grid.insertTile(merged);
