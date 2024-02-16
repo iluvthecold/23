@@ -552,7 +552,11 @@ hr {
     border-radius: 24px; }
   .tile.tile-12 .tile-inner {
     color: #000000;
-    background: #000000;
+    background: #000000; }
+  .tile.tile-13 .tile-inner {
+    color: #000000;
+    background: #000000; 
+    border-radius: 24px; }
   .tile.tile-22 .tile-inner {
     color: #000000;
     background: #000000; 
