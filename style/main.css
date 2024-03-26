@@ -152,7 +152,7 @@ hr {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  background: #fffdf6;
+  background: #dfbf50;
   border-radius: 8px;
   width: 492px;
   height: 492px;
@@ -222,8 +222,8 @@ hr {
   height: 53.25px;
   margin-right: 6.7px;
   float: left;
-  border-radius: 3px;
-  background: #dfbf50; }
+  border-radius: 5px;
+  background: #fff6d7; }
   .grid-cell:last-child {
     margin-right: 0; }
 
