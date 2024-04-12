@@ -74,6 +74,8 @@ HTMLActuator.prototype.addTile = function (tile) {
   if (tile.value === "17➔") inner.textContent = "↷➔";
   if (tile.value === 18) inner.textContent = "↶";
   if (tile.value === "18➔") inner.textContent = "↶➔";
+  if (tile.value === 19) inner.textContent = "↿";
+  if (tile.value === 20) inner.textContent = "➔";
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
