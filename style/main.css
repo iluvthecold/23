@@ -515,7 +515,7 @@ hr {
   .tile.tile-16➔ .tile-inner {
     color: #c61414;
     background: #000000; 
-    font-size: 25px; }
+    font-size: 20px; }
   .tile.tile-0 .tile-inner {
     color: #b219df;
     background: #ffaa1f; }
@@ -525,7 +525,7 @@ hr {
   .tile.tile-➔ .tile-inner {
     color: #0f060c;
     background: #6d6d6d; }
-  .tile.tile-↿ .tile-inner {
+  .tile.tile-19 .tile-inner {
     background: #bfb197; }
   .tile.tile-↿➔ .tile-inner {
     background: #bfb197; }
