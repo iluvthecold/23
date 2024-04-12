@@ -509,6 +509,13 @@ hr {
     font-family: fangsong;
     z-index: 10;
     font-size: 30px; }
+  .tile.tile-16 .tile-inner {
+    color: #c61414;
+    background: #000000; }
+  .tile.tile-16➔ .tile-inner {
+    color: #c61414;
+    background: #000000; 
+    font-size: 25px; }
   .tile.tile-0 .tile-inner {
     color: #b219df;
     background: #ffaa1f; }
@@ -645,10 +652,16 @@ hr {
     color: #f6ef19;
     background: #006d59; 
     font-size: 25px; }
-  .tile.tile-↷ .tile-inner {
+  .tile.tile-17 .tile-inner {
     color: #686158;
     background: #d6fa96; }
-  .tile.tile-↶ .tile-inner {
+  .tile.tile-17➔ .tile-inner {
+    color: #686158;
+    background: #d6fa96; }
+  .tile.tile-18 .tile-inner {
+    color: #686158;
+    background: #d6fa96; }
+  .tile.tile-18➔ .tile-inner {
     color: #686158;
     background: #d6fa96; }
 
