@@ -62,20 +62,12 @@ HTMLActuator.prototype.addTile = function (tile) {
   // We can't use classlist because it somehow glitches when replacing classes
   var classes = ["tile", "tile-" + tile.value, positionClass];
 
-  if (tile.value > 9999999) classes.push("tile-super");
+  if (tile.value > 9999999999999999999999999999999999999999) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
   inner.textContent = tile.value;
-  if (tile.value === 16) inner.textContent = "+ 1";
-  if (tile.value === "16➔") inner.textContent = "+ 1➔";
-  if (tile.value === 17) inner.textContent = "↷";
-  if (tile.value === "17➔") inner.textContent = "↷➔";
-  if (tile.value === 18) inner.textContent = "↶";
-  if (tile.value === "18➔") inner.textContent = "↶➔";
-  if (tile.value === 19) inner.textContent = "↿";
-  if (tile.value === 20) inner.textContent = "➔";
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
@@ -139,7 +131,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "13!!!" : "Try again";
+  var message = won ? "Ah, you got some 12s!" : "X";
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
@@ -166,7 +158,7 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.setAttribute("data-via", "no");
   tweet.textContent = "Tweet";
 
-  var text = "9";
+  var text = "12, #advyout";
   tweet.setAttribute("data-text", text);
 
   return tweet;
