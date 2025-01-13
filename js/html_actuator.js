@@ -62,12 +62,24 @@ HTMLActuator.prototype.addTile = function (tile) {
   // We can't use classlist because it somehow glitches when replacing classes
   var classes = ["tile", "tile-" + tile.value, positionClass];
 
-  if (tile.value > 9999999999999999999999999999999999999999) classes.push("tile-super");
+  if (tile.value > 999999999999999999999999999999999999999999999) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
   inner.textContent = tile.value;
+  if (tile.value === 30) inner.textContent = "0";
+  if (tile.value === -2) inner.textContent = "ꜜ";
+  if (tile.value === -3) inner.textContent = ":";
+  if (tile.value === -5) inner.textContent = "ꜛ";
+  if (tile.value === -6) inner.textContent = "ꜜꜜ";
+  if (tile.value === -7) inner.textContent = "ꜜꜛ";
+  if (tile.value === -8) inner.textContent = "ꜛꜜ";
+  if (tile.value === -9) inner.textContent = "ꜛꜛ";
+  if (tile.value === -10) inner.textContent = "ꜜꜜꜜꜜ";
+  if (tile.value === -11) inner.textContent = "ꜛꜛꜛꜛ";
+  if (tile.value === -12) inner.textContent = "ꜜꜜꜜꜜꜜꜜꜜꜜ";
+  if (tile.value === -13) inner.textContent = "ꜛꜛꜛꜛꜛꜛꜛꜛ";
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
@@ -131,7 +143,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "Ah, you got some 12s!" : "X";
+  var message = won ? "23 is a tile you got twice!" : "R.I.P";
 
   if (typeof ga !== "undefined") {
     ga("send", "event", "game", "end", type, this.score);
@@ -155,10 +167,11 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   var tweet = document.createElement("a");
   tweet.classList.add("twitter-share-button");
   tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "no");
+  tweet.setAttribute("data-via", "23");
   tweet.textContent = "Tweet";
 
-  var text = "12, #advyout";
+  var text = "I spawned " + this.score + " this many tiles on 23, a game where you " +
+             "merge tiles to get 23s! #advyout";
   tweet.setAttribute("data-text", text);
 
   return tweet;
