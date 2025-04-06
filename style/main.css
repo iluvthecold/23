@@ -508,6 +508,22 @@ hr {
     font-weight: light;
     z-index: 10;
     font-size: 26px; }
+  .tile.tile--17 .tile-inner {
+    color: #ff0000;
+    background: #7c8d47;
+    line-height: 90px; }
+  .tile.tile--16 .tile-inner {
+    color: #ff0000;
+    background: #7c8d47;
+    line-height: 90px; }
+  .tile.tile--15 .tile-inner {
+    color: #ff0000;
+    background: #7c8d47;
+    line-height: 90px; }
+  .tile.tile--14 .tile-inner {
+    color: #ff0000;
+    background: #7c8d47;
+    line-height: 90px; }
   .tile.tile--13 .tile-inner {
     color: #ff0000;
     background: #7c8d47;
